@@ -7,6 +7,7 @@ import { InvoicesTableSkeleton } from '@/app/ui/skeletons'
 import { Suspense } from 'react'
 import { fetchInvoicesPages } from '@/app/lib/data'
 
+// page 组件是一个异步函数，接收 props 对象
 export default async function Page(props: {
   searchParams?: Promise<{
     query?: string

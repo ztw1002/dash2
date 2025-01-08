@@ -3,6 +3,7 @@ import Breadcrumbs from '@/app/ui/invoices/breadcrumbs'
 import { fetchCustomers } from '@/app/lib/data'
 
 export default async function Page() {
+  // 调用 fetchCustomers 函数获取客户数据
   const customers = await fetchCustomers()
 
   return (

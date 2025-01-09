@@ -6,6 +6,11 @@ import { lusitana } from '@/app/ui/fonts'
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons'
 import { Suspense } from 'react'
 import { fetchInvoicesPages } from '@/app/lib/data'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Invoices | Acme Dashboard',
+}
 
 // page 组件是一个异步函数，接收 props 对象
 export default async function Page(props: {
